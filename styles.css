@@ -1,0 +1,151 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+html,
+body {
+    color: white;
+    font-weight: normal;
+    background-image: linear-gradient(to right top, #060606, #050504, #030303, #020201, #000000);
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+button,
+input {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.header__logo {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.header__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    padding: 40px 110px 40px 80px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    z-index: 10;
+}
+
+.header__button {
+    margin-left: 553px;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    font-size: 16px;
+}
+
+.header__nav a:not(:last-child) {
+    margin-right: 71px;
+}
+
+.header__nav a {
+    font-size: 16px;
+}
+
+.button {
+    border-radius: 50px;
+    padding: 10px 30px;
+    color: white;
+}
+
+.main-display__header {
+    font-size: 64px;
+    max-width: 760px;
+    margin-bottom: 50px;
+}
+
+.timer__item {
+    width: 102px;
+    height: 112px;
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-display__timer {
+    display: flex;
+    margin-bottom: 76px;
+}
+
+.timer__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.timer__count {
+    font-size: 36px;
+}
+
+.timer__text {
+    opacity: 0.4;
+    font-size: 16px;
+
+}
+
+.main-display__button {
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+
+}
+
+.main-display__background {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.main-display .container {
+    position: relative;
+    z-index: 2;
+}
+
+.main-display {
+    padding-top: 270px;
+}
